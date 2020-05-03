@@ -16,6 +16,8 @@
 
 	font-family: 'Montserrat', sans-serif;
 	.nav {
+		margin: 0;
+		padding: 10px;/*добавил паддинг*/
 		.container {
 			display: flex;
 			justify-content: space-between;
@@ -34,8 +36,6 @@
 				font-size: 12px;/*уменьшил шрифт*/
 				margin: 0; /*обнулил отступы*/
 				padding: 0;/*обнулил отступы*/
-
-				border: 1px solid #000;
 			}
 			.main-nav{
 				margin: 0;/*обнулил отступы*/
