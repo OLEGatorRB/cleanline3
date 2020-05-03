@@ -20,7 +20,6 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			border: 1px solid #000;
 			.logo {
 				text-transform: uppercase;
 				font-size: 24px;
@@ -32,17 +31,21 @@
 				}
 			}
 			.tel {
-				font-size: 16px;
+				font-size: 12px;/*уменьшил шрифт*/
+				margin: 0; /*обнулил отступы*/
+				padding: 0;/*обнулил отступы*/
+
+				border: 1px solid #000;
 			}
 			.main-nav{
+				margin: 0;/*обнулил отступы*/
+				padding: 0;/*обнулил отступы*/
 					.main-nav__toggle {
 						width: 25px;
 						height: 25px;
 					}
 					.main-nav__menu{
 						display: none;
-						padding: 0;
-						margin: 0;
 
 						list-style: none;
 					}
@@ -61,7 +64,8 @@
 				margin: 0 auto;
 				margin-bottom: 20px;
 
-				font-size: 25px;
+				font-size: 14px;/*уменьшил шрифт*/
+				text-transform: uppercase;
 				font-weight: bold;
 
 				text-align: center;
@@ -69,15 +73,13 @@
 			.header__content-description{
 				list-style: none;
 
-
 				margin: 0 auto;
 
-				font-size: 16px;
+				font-size: 12px;
 
 				.header__content-description-item {
 					margin-bottom: 15px;
-					margin-left: 40px;
-
+					/*убрал отступ слева*/
 					font-weight: bold;
 
 				}
