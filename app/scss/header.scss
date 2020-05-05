@@ -18,7 +18,7 @@
 	.nav {
 		margin: 0;
 		padding: 10px;/*добавил паддинг*/
-		.container {
+		&__inner {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -53,10 +53,13 @@
 		}
 	};
 	.header__content{
+		display: flex;
+
 		background-image: url("../img/header/main-foto.jpg");
 		background-position: 50%;
 		background-size: cover;
 		background-repeat: no-repeat;
+		
 		padding-bottom: 260px;
 		padding-top: 30px;
 		.container{
@@ -69,19 +72,21 @@
 				font-weight: bold;
 
 				text-align: center;
+
 			}
 			.header__content-description{
+				display: flex;
+				flex-direction: column;;
+
 				list-style: none;
 
-				margin: 0 auto;
-
 				font-size: 12px;
+
 
 				.header__content-description-item {
 					margin-bottom: 15px;
 					/*убрал отступ слева*/
 					font-weight: bold;
-
 				}
 			}
 		}
@@ -92,13 +97,13 @@
 @media only screen and (min-width: 768px) {
 	.page-header {
 		.nav {
-			background-color: blue;
+			padding: 20px;
 			.container {
 				.logo {
-					font-size: 26px;					
+					font-size: 24px;					
 				}
 				.tel {
-					font-size: 13px;
+					font-size: 15px;
 					order: 2;
 				}	
 				.main-nav{
@@ -130,12 +135,12 @@
 		.header__content{
 			padding-top: 50px;
 			.container{
-				width: 640px;
+
 				.header__content-title{
-					font-size: 30px;
+					font-size: 28px;
 				}
 				.header__content-description{
-					width: 500px;
+					text-align: center;
 					.header__content-description-item{
 						font-size: 20px;
 					}
@@ -148,22 +153,23 @@
 @media only screen and (min-width: 988px) {
 	.page-header {
 		.nav {
-			min-height: 100px;
+			margin: 0;
+			padding: 30px 0;
 			background-color: #f0f;
-			.container {
-				width: 960px;
-				.logo {
-					font-size: 32px;
-				}
-				.tel {
-					font-size: 16px;
-				}
-				.main-nav{
-					.main-nav__menu {
-						.main-nav__link {
-							margin-right: 15px;
+			.container{
+					.logo {
+						font-size: 30px;
+					}
+					.tel {
+						font-size: 20px;
+					}
+					.main-nav{
+						.main-nav__menu {
+							.main-nav__link {
+								margin-right: 15px;
 
-							font-size: 16px;
+								font-size: 18px;
+							}
 						}
 					}
 				}
@@ -173,20 +179,19 @@
 			padding-top: 50px;
 			padding-bottom: 345px;
 			.container{
-				width: 960px;
-				.header__content-title{
-					font-size: 38px;
-				}
-				.header__content-description{
-					width: 500px;
-					.header__content-description-item{
-						font-size: 20px;
+				.header__content-inner{
+					.header__content-title{
+						font-size: 36px;
+					}
+					.header__content-description{
+						.header__content-description-item{
+							font-size: 20px;
+						}
 					}
 				}
 			}
 		}
 	}
-}
 
 
 

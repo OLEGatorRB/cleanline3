@@ -93,11 +93,13 @@
 			}
 			.services__list {
 				display: flex;
-				justify-content: space-between;
+				justify-content: space-around;
 				
-				width: 100%;
-
 				.services__item {
+					margin-right: 10px;
+					&:last-child{
+						margin-right: 0;
+					}
 					.services__item-title {
 						font-size: 20px;
 					}
@@ -126,6 +128,7 @@
 			.services__list {
 				font-size: 20px;
 				.services__item {
+					margin-right: 50px;
 					.services__item-title {
 						font-size: 24px;
 						margin-bottom: 25px;

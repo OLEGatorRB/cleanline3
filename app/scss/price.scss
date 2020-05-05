@@ -5,7 +5,6 @@
 	padding-bottom: 20px;
 
 	background-color: #fff;
-	background-image: url("../img/price/price.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -54,10 +53,9 @@
 
 	list-style: none;
 	
-	font-size: 14px;
+	font-size: 19px;
 
 	text-align: left;
-	text-transform: uppercase;
 
 	background-color: rgba(255, 255, 255, 0.6);
 }
@@ -72,7 +70,11 @@
 
 .price__item {
 	margin-bottom: 20px;
+	padding-bottom: 5px;
 
+	text-align: center;
+
+	border-bottom: 1px solid #000;
 }
 
 .price__item:last-child{
@@ -114,19 +116,32 @@
 	}
 
 	.price__inner {
-		justify-content: center;
+		display: flex;
+		justify-content: space-around;
+
 	}
 
 	.price__list{
-		margin-right: 20px;
+		padding: 0;
 
-		font-size: 20px;
+		font-size: 18px;
+
+		text-transform: uppercase;
+	}
+
+	.price__item {
+		border-bottom: 0;
+
+		text-align: left;
 	}
 
 	.price__photo{
-		margin-left: 20px;
 
-		width: 250px;
+		width: 300px;
+	}
+
+	.price__photo.not-show {
+		display: block;
 	}
 }
 
@@ -150,7 +165,7 @@
 	.price__photo{
 		margin-left: 40px;
 
-		width: 300px;
+		width: 350px;
 	}
 
 	.price__type-of-space{
