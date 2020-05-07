@@ -51,7 +51,7 @@
 	margin: 0; /*обнулил отступы*/
 	padding: 0; /*обнулил отступы*/
 
-	border: 5px solid #ff0;
+
 	background-color: #fff;
 }
 
@@ -70,13 +70,14 @@
 .main-nav__menu {
 	position: absolute;
 	right: 0;
+	top: -10px;
 	width: 200px;
 
 	margin: 0;
 	padding-top: 30px;
 	padding-left: 25px;
 
-	min-height: 360px;
+	min-height: 400px;
 
 	list-style: none;
 
@@ -84,7 +85,7 @@
 }
 button.main-nav__toggle {
 	position: absolute;
-	top: 15px;
+	top: 0px;
 	right: 0px;
 
 	width: 50px;
@@ -102,7 +103,7 @@ button.main-nav__toggle {
 	display: block;
 
 	position: absolute;
-	top: 20px;
+	top: 23px;
 	right: 8px;
 
 	width: 30px;
