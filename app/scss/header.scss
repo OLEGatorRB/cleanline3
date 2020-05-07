@@ -76,7 +76,7 @@
 	padding-top: 30px;
 	padding-left: 25px;
 
-	min-height: 400px;
+	min-height: 360px;
 
 	list-style: none;
 
@@ -85,14 +85,15 @@
 button.main-nav__toggle {
 	position: absolute;
 	top: 15px;
-	right: 10px;
+	right: 0px;
 
 	width: 50px;
 	height: 50px;
 
+	border: 0;
+
 	background-color: #fff;
 
-	border: none;
 }
 .main-nav__toggle::before,
 .main-nav__toggle::after {
@@ -102,7 +103,7 @@ button.main-nav__toggle {
 
 	position: absolute;
 	top: 20px;
-	right: 3px;
+	right: 8px;
 
 	width: 30px;
 	height: 3px;
