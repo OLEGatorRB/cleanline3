@@ -20,15 +20,19 @@ body{
 
 
 .nav {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 0 10px;
+	padding: 10px;
+
+	min-height: 40px;
 
 }
 
-@media only screen and (min-width: 988px){
+@media only screen and (min-width: 768px){
 	.nav{
 		margin: 0 auto;
 		padding: 10px 0;
@@ -83,7 +87,7 @@ body{
 .tel {
 	order: 2;
 
-	font-size: 15px;	}
+	font-size: 12px;	}
 }
 
 @media only screen and (min-width: 988px) {
@@ -96,7 +100,7 @@ body{
 
 
 
-.main-nav{
+/* .main-nav{
 	&--opened{
 	position: absolute;
 	top: 0;
@@ -107,22 +111,26 @@ body{
 	background-color: #fff;
 
 	.menu {
-		display: block;
-
 		padding-top: 30px;
 		padding-left: 30px;
 		padding-bottom: 30px;
 
 		list-style: none;
 
-		&__item{
-			margin-bottom: 15px;
-			padding-bottom: 15px;
 
+		&__item {
+			border-bottom: 1px solid #000;
 		}
 
 		&__link{
+			display: block;
+
+			padding: 15px 0;
+			padding-left: 15px;
+
 			color: #000;
+
+			font-size: 18px;
 
 			text-decoration: none;
 		}
@@ -130,8 +138,15 @@ body{
 
 	.main-nav__toggle {
 		position: absolute;
-		top: 10px;
+		top: 20px;
 		right: 10px;
+
+		width: 35px;
+		height: 35px;
+
+		border: none;
+
+		background-color: #fff;
 
 		&::before,
 		&::after {
@@ -160,51 +175,178 @@ body{
 		}
 	}
 }
-}
+
+
+} */
 
 @media only screen and (max-width: $mobile-width-only) {
-	.main-nav--closed .main-nav__toggle {
-		position: relative;
-	
-		width: 35px;
-		height: 35px;
-	
-		background-color: #fff;
-	
-		border: none;
+
+	.main-nav--closed {
+		.main-nav__toggle {
+			position: relative;
+		
+			width: 35px;
+			height: 35px;
+
+			background-color: #fff;
+		
+			border: none;
+
+			cursor: pointer;
+		}
+
+		.main-nav__toggle::before {
+			content: "";
+		
+			position: absolute;
+			top: 5px;
+			left: 0;
+		
+			display: block;
+			width: 35px;
+			height: 2px;
+		
+			background-color:#000;
+		
+			box-shadow: 0 10px 0 0 #000, 0 20px 0 0 #000;
+		}
+		
+		.menu {
+			display: none;
+		
+			margin: 0;
+			padding: 0;
+		}
 	}
 
-	.main-nav--closed .main-nav__toggle::before {
-		content: "";
-	
+	.main-nav--opened {
+		.menu{
+			position: absolute;
+			top: 0;
+			right: 0;
+		
+			width: 250px;
+		
+			background-color: #fff;
+		
+			padding-top: 30px;
+			padding-left: 30px;
+			padding-bottom: 30px;
+		
+			list-style: none;
+		
+			&__item {
+				border-bottom: 1px solid #000;
+			}
+			&__link{
+				display: block;
+				padding: 15px 0;
+				padding-left: 15px;
+				color: #000;
+				font-size: 18px;
+		
+				text-decoration: none;
+			}
+		}
+		
+		.main-nav__toggle {
+				position: absolute;
+				top: 20px;
+				right: 10px;
+				z-index: 2;
+		
+				width: 35px;
+				height: 35px;
+		
+				border: none;
+				background-color: #fff;
+		
+				&::before,
+				&::after {
+					content: "";
+		
+					position: absolute;
+					top: 15px;
+					left: 0;
+		
+					box-shadow: none;
+		
+					display: block;
+					width: 35px;
+					height: 2px;
+		
+					background-color: #000;
+		
+				}
+		
+				&::before{
+					transform: rotate(45deg);
+				}
+		
+				&::after{
+					transform: rotate(-45deg);
+				}
+		}
+	}
+
+	.main-nav--no-js{
 		position: absolute;
-		top: 5px;
-		left: 0;
-	
-		display: block;
-		width: 35px;
-		height: 2px;
-	
-		background-color:#000;
-	
-		box-shadow: 0 10px 0 0 #000, 0 20px 0 0 #000;
+		top: 0;
+		right: 0;
+		
+		width: 250px;
+		
+		background-color: #fff;
+		
+		.menu {
+			display: block;
+		
+			list-style: none;
+		
+			padding-top: 30px;
+			padding-left: 30px;
+			padding-bottom: 30px;
+		
+			&__item{
+					
+				border-bottom: 1px solid #000;	
+			}
+		
+			&__link{
+				display: block;
+				padding: 15px;
+
+				color: #000;
+		
+				font-size: 18px;
+		
+				text-decoration: none;
+			}
+		}
+		
+		.main-nav__toggle {
+			display: none;		
+			
+			&::after,
+			&::before {
+				display: none;
+			}
+		}
 	}
-	
-	.main-nav--closed .menu {
-		display: none;
-	
-		margin: 0;
-		padding: 0;
-		background-color: #f0f;
-	}
-	
 }
+
+
+
+	
+
+
+
 
 @media only screen and (min-width: 768px) {
 	.main-nav{	
 		position: static;
 
-		min-width: 450px;
+		min-width: 480px;
 
 		margin: 0;
 		padding: 0;
@@ -220,18 +362,23 @@ body{
 				margin: 0;
 				padding: 0;
 
+				border-bottom: none;
+
 				&:last-child{
 					margin-right: 0px;
 				}
 			}
 	
 			&__link{
-				font-size: 13px;
+				font-size: 12px;
 
 				text-transform: uppercase;
 
 				text-decoration: none;
+
 				color: #000;
+
+
 			}	
 		}
 	
@@ -243,7 +390,7 @@ body{
 
 @media only screen and (min-width: 988px) {
 	.main-nav {	
-		min-width: 580px;
+		min-width: 610px;
 
 		.menu {
 			display: flex;
