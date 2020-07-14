@@ -1,27 +1,27 @@
-body{
+body {
 	font-family: "Moncerat";
 }
-.services{
+.services {
 	margin: 0;
 	padding: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 
+	border: 1px solid red;
+
 	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	
+
 		padding: 0;
 		margin: 0;
-	
+
 		.not-show {
 			display: none;
 		}
 	}
 }
-
-
 
 .services__title {
 	align-self: center;
@@ -44,10 +44,9 @@ body{
 
 	margin: 0;
 	padding: 0;
-	
 }
 
-.services__item{
+.services__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -57,11 +56,11 @@ body{
 	margin: 0;
 	padding: 0;
 
-
 	img {
 		border-radius: 50%;
 
-		margin: 0;padding: 0;
+		margin: 0;
+		padding: 0;
 	}
 }
 
@@ -74,8 +73,25 @@ body{
 	font-weight: normal;
 
 	text-transform: uppercase;
+}
+
+.services__item-button {
+	min-width: 100px;
+	padding: 5px 20px;
+
+	font-family: inherit;
+
+	border: 2px solid transparent;
+	border-radius: 5px;
+
+	background-color: #2d333f;
+
+	color: #fff;
+
+	font-size: 16px;
 
 }
+
 .services__modal {
 	position: relative;
 
@@ -89,16 +105,16 @@ body{
 	align-items: center;
 
 	margin: 0;
-	padding: 0 ;
+	padding: 0;
 
 	list-style: none;
 }
 
 .services__modal-item {
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 	width: 220px;
 }
-.services__modal-item img{
+.services__modal-item img {
 	display: block;
 	width: 220px;
 }
@@ -108,7 +124,7 @@ body{
 	top: -20px;
 	right: -40px;
 	z-index: 5;
-	
+
 	display: block;
 
 	width: 35px;
@@ -141,17 +157,14 @@ body{
 	&::after {
 		transform: rotate(-45deg);
 	}
-
 }
 
-@media only screen and (min-width: 768px){
-	.services{	
+@media only screen and (min-width: 768px) {
+	.services {
 		.container {
-			padding: 0 20px;
-			.services__list {	
-				justify-content: space-between;
-
-
+			padding: 0 ;
+			.services__list {
+				justify-content: space-around;
 				.services__item {
 					min-width: auto;
 
@@ -159,6 +172,10 @@ body{
 					padding: 0;
 
 					text-align: center;
+
+					&-title {
+						font-size: 20px;
+					}
 
 					img {
 						width: 225px;
@@ -171,21 +188,29 @@ body{
 			.toggles {
 				display: none;
 			}
+
+			
 			.services__modal-list {
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: center;
 				align-items: start;
 
-				padding: 0 30px;
+				width: 100%;
+
+				padding-top: 0px ;
+				padding-right: 40px;
+
 			}
 
 			.services__modal-item {
-				width: auto;
+
+				width: 40%;
+
+				margin-right: 20px;
+
 
 				img {
-					margin-right: 40px;
-
-					width: 300px;
+					width: 100%;
 				}
 
 				&--text {
@@ -193,15 +218,15 @@ body{
 				}
 			}
 
-			.services__modal-button {
-				right: 0;
+ 			.services__modal-button {
+				right: 40px;
 			}
 		}
 	}
 }
 
-@media only screen and (min-width: 988px){
-	.services{	
+@media only screen and (min-width: 988px) {
+	.services {
 		padding-top: 100px;
 		padding-bottom: 100px;
 
@@ -214,51 +239,52 @@ body{
 				margin-bottom: 50px;
 			}
 
-			.services__list {	
-				justify-content: space-between;
+			.services__list {
 
 				.services__item {
-					.services__item-title {
-						font-size: 20px;
+					&-title {
+						font-size: 24px;
 					}
-				img {						
-						width: 310px;
+
+					img {
+						width: 300px;
 					}
+
 					.services__item-price {
-						font-size: 20px;
+						font-size: 24px;
 					}
+
 					.services__item-button {
+						
 						font-size: 20px;
 
 						cursor: pointer;
+						
+						&:hover {
+							background-color: #fff;
+							color: #2d333f;
+							border-color: #2d333f;
+						}
+
 					}
 				}
 			}
 			.services__modal-list {
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: center;
 
 				padding: 0 30px;
+
+
 			}
 
 			.services__modal-item {
-				width: auto;
-
-				img {
-					align-self: start;
-
-					margin-right: 40px;
-
-					width: 400px;
-				}
-
-				&--text {
-					align-self: start;
-				}
+				width: 44%;
 			}
 
 			.services__modal-button {
 				right: 0;
+				top: -35px;
 			}
 		}
 	}

@@ -1,7 +1,11 @@
-.faq{
-	margin: 0;
-	padding: 20px 20px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
+.faq {
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
 	background-color: #fff;
 	background-image: url("../img/faq/faq.jpg");
@@ -11,17 +15,21 @@
 	color: #000;
 
 	font-size: 18px;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("../img/faq/faq@2x.jpg");
+	}
 }
 
-.faq .container{
-	margin: 0 ;
+.faq .container {
+	margin: 0;
 	padding: 0;
-	.not-show{
+	.not-show {
 		display: none;
 	}
 }
 
-.faq__title{
+.faq__title {
 	margin: 0;
 	margin-bottom: 15px;
 	padding: 0;
@@ -40,7 +48,7 @@
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
-.faq__question{
+.faq__question {
 	position: relative;
 
 	margin-bottom: 20px;
@@ -49,12 +57,12 @@
 
 	text-transform: uppercase;
 
-	&::before{
+	&::before {
 		content: "";
 
 		position: absolute;
-		top: 0;
-		left: -40px;
+		top: -5px;
+		left: -35px;
 		width: 35px;
 		height: 35px;
 
@@ -65,7 +73,7 @@
 	}
 }
 
-.faq__answer{
+.faq__answer {
 	font-size: 16px;
 
 	margin: 0;
@@ -74,14 +82,13 @@
 	margin-left: 50px;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-	.faq{
-	padding: 50px 40px;	}
+	.faq {
+		padding-bottom: 50px;
+	}
 
-	.faq__title{
-		font-size: 30px;
+	.faq__title {
+		font-size: 24px;
 		margin-bottom: 25px;
 	}
 
@@ -90,15 +97,14 @@
 		padding: 20px 40px;
 
 		width: 590px;
-
 	}
-	
-	.faq__question{
+
+	.faq__question {
 		margin-bottom: 15px;
 		font-size: 16px;
 	}
-	
-	.faq__answer{
+
+	.faq__answer {
 		padding: 0;
 		margin-bottom: 30px;
 
@@ -106,12 +112,12 @@
 	}
 }
 
-
 @media only screen and (min-width: 988px) {
-	.faq{
-	padding: 100px 80px;	}
+	.faq {
+		padding: 100px 80px;
+	}
 
-	.faq__title{
+	.faq__title {
 		font-size: 36px;
 		margin-bottom: 50px;
 	}
@@ -121,22 +127,24 @@
 		padding: 40px 80px;
 
 		width: 660px;
-		.not-show{
+		.not-show {
 			display: none;
 		}
 	}
-	
-	.faq__question{
+
+	.faq__question {
 		margin-bottom: 20px;
 		font-size: 18px;
+
+		span {
+			cursor: pointer;
+		}
 	}
-	
-	.faq__answer{
+
+	.faq__answer {
 		padding: 0;
 		margin-bottom: 40px;
 
 		font-size: 18px;
 	}
 }
-
-
