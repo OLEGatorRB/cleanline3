@@ -212,6 +212,7 @@ img {
 	}
 
 	.main-nav--opened {
+		z-index: 3;
 		.menu {
 			position: absolute;
 			top: 0;
@@ -226,6 +227,7 @@ img {
 			padding-bottom: 30px;
 
 			list-style: none;
+
 
 			&__item {
 				border-bottom: 1px solid #000;

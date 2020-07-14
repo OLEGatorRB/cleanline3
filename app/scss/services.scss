@@ -7,8 +7,6 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 
-	border: 1px solid red;
-
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -89,7 +87,6 @@ body {
 	color: #fff;
 
 	font-size: 16px;
-
 }
 
 .services__modal {
@@ -162,7 +159,7 @@ body {
 @media only screen and (min-width: 768px) {
 	.services {
 		.container {
-			padding: 0 ;
+			padding: 0;
 			.services__list {
 				justify-content: space-around;
 				.services__item {
@@ -189,7 +186,6 @@ body {
 				display: none;
 			}
 
-			
 			.services__modal-list {
 				flex-direction: row;
 				justify-content: center;
@@ -197,17 +193,14 @@ body {
 
 				width: 100%;
 
-				padding-top: 0px ;
+				padding-top: 0px;
 				padding-right: 40px;
-
 			}
 
 			.services__modal-item {
-
 				width: 40%;
 
 				margin-right: 20px;
-
 
 				img {
 					width: 100%;
@@ -218,7 +211,7 @@ body {
 				}
 			}
 
- 			.services__modal-button {
+			.services__modal-button {
 				right: 40px;
 			}
 		}
@@ -240,7 +233,6 @@ body {
 			}
 
 			.services__list {
-
 				.services__item {
 					&-title {
 						font-size: 24px;
@@ -255,17 +247,15 @@ body {
 					}
 
 					.services__item-button {
-						
 						font-size: 20px;
 
 						cursor: pointer;
-						
+
 						&:hover {
 							background-color: #fff;
 							color: #2d333f;
 							border-color: #2d333f;
 						}
-
 					}
 				}
 			}
@@ -274,8 +264,6 @@ body {
 				justify-content: center;
 
 				padding: 0 30px;
-
-
 			}
 
 			.services__modal-item {
