@@ -8,11 +8,11 @@ $retina-dppx: 1.5dppx;
 	padding-bottom: 20px;
 
 	background-color: #fff;
-	/* background-image: url("../img/faq/faq.jpg");
+	background-image: url("../img/faq/faq.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 50%; */
-	color: #000;
+	background-position: 50%;
+ 	color: #000;
 	opacity: 0.8;
 
 	font-size: 18px;
@@ -24,8 +24,10 @@ $retina-dppx: 1.5dppx;
 }
 
 .faq .container {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+
+	width: 80%;
 	.not-show {
 		display: none;
 	}
@@ -41,13 +43,15 @@ $retina-dppx: 1.5dppx;
 
 	text-align: center;
 	text-transform: uppercase;
+
+	color: #fff
 }
 
 .faq__list {
 	margin: 0 auto;
-	padding: 10px;
+	padding: 20px 10px 10px;
 
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .faq__question {
@@ -116,18 +120,18 @@ $retina-dppx: 1.5dppx;
 
 @media only screen and (min-width: 988px) {
 	.faq {
-		padding: 100px 80px;
+		padding-top: 100px;
+		padding-bottom: 80px;
+		margin-bottom: 0;
 	}
 
 	.faq__title {
 		font-size: 36px;
-		margin-bottom: 50px;
 	}
 
 	.faq__list {
 		margin: 0 auto;
-		padding: 40px 80px;
-
+		padding: 0;
 		width: 660px;
 		.not-show {
 			display: none;
@@ -136,7 +140,11 @@ $retina-dppx: 1.5dppx;
 
 	.faq__question {
 		margin-bottom: 20px;
-		font-size: 18px;
+		font-size: 21px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
 
 		span {
 			cursor: pointer;
@@ -145,8 +153,15 @@ $retina-dppx: 1.5dppx;
 
 	.faq__answer {
 		padding: 0;
+		margin-left: 60px;
 		margin-bottom: 40px;
 
-		font-size: 18px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		font-size: 21px;
+
+		font-weight: normal;
 	}
 }

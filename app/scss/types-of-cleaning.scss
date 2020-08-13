@@ -283,6 +283,7 @@
 	list-style: none;
 
 	text-align: left;
+	
 }
 @media only screen and (min-width: 988px) {
 
@@ -309,7 +310,7 @@
 	}
 
 	.toc__desctop-item {
-		font-size: 20px;
+		font-size: 21px;
 
 		text-transform: uppercase;
 	}
@@ -337,6 +338,8 @@
 		margin: 0;
 		margin-bottom: 25px;
 		padding: 0;
+
+		font-size: 21px;
 	}
 
 	.desctop__low {
@@ -355,6 +358,11 @@
 		font-size: 22px;
 
 		text-align: center;
+		text-decoration: underline;
+	}
+
+	.detailed__item {
+		font-size: 22px;
 	}
 
 	.toc__desctop-low li {
