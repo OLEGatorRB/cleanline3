@@ -114,153 +114,178 @@ toggleThree.addEventListener('click', function() {
 	}
 });
 
-//виды уборок - подробнее
-var typeOfCleaningSupportive = document.querySelector('.types-of-cleaning__item--supportive');
-var typeOfCleaningDescriptionSupportive = document.querySelector(
-	'.types-of-cleaning__description-container--supportive'
-);
-var typeOfCleaningDesctopSupportive = document.querySelector('.types-of-cleaning__list-desctop-of-works--supportive');
-var spanSupportive = document.querySelector('.span--supportive');
+//виды уборок - подробнее - нажимаем на тип уборки - появляется краткое описание
+var supportive = document.querySelector('.toc__item-title--supportive');
+var supportiveDescription = document.querySelector('.toc__item-description--supportive');
+var general = document.querySelector('.toc__item-title--general');
+var generalDescription = document.querySelector('.toc__item-description--general');
+var afterRepair = document.querySelector('.toc__item-title--after-repair');
+var afterRepairDescription = document.querySelector('.toc__item-description--after-repair');
+var dop = document.querySelector('.toc__item-title--dop');
+var dopDescription = document.querySelector('.toc__item-description--dop');
 
-var typeOfCleaningComplex = document.querySelector('.types-of-cleaning__item--complex');
-var typeOfCleaningDescriptionComplex = document.querySelector('.types-of-cleaning__description-container--complex');
-var typeOfCleaningDesctopComplex = document.querySelector('.types-of-cleaning__list-desctop-of-works--complex');
-var spanComplex = document.querySelector('.span--complex');
-
-var typeOfCleaningGeneral = document.querySelector('.types-of-cleaning__item--general');
-var typeOfCleaningDescriptionGeneral = document.querySelector('.types-of-cleaning__description-container--general');
-var typeOfCleaningDesctopGeneral = document.querySelector('.types-of-cleaning__list-desctop-of-works--general');
-var spanGeneral = document.querySelector('.span--general');
-
-var typeOfCleaningAfterRepair = document.querySelector('.types-of-cleaning__item--after-repair');
-var typeOfCleaningDescriptionAfterRepair = document.querySelector(
-	'.types-of-cleaning__description-container--after-repair'
-);
-var typeOfCleaningDesctopAfterRepair = document.querySelector(
-	'.types-of-cleaning__list-desctop-of-works--after-repair'
-);
-var spanAfterRepair = document.querySelector('.span--after-repair');
-
-typeOfCleaningSupportive.addEventListener('click', function() {
-	typeOfCleaningDescriptionSupportive.classList.toggle('not-show');
-	/* 	typeOfCleaningDescriptionComplex.classList.add("not-show");
-	typeOfCleaningDescriptionGeneral.classList.add("not-show");
-	typeOfCleaningDescriptionAfterRepair.classList.add("not-show"); */
-
-	//desctop
-	typeOfCleaningDesctopSupportive.classList.remove('not-show');
-	typeOfCleaningDesctopComplex.classList.add('not-show');
-	typeOfCleaningDesctopGeneral.classList.add('not-show');
-	typeOfCleaningDesctopAfterRepair.classList.add('not-show');
-
-	//active
-	spanSupportive.classList.add('active');
-	spanSupportive.classList.remove('no-active');
-	if (spanComplex.classList.contains('active')) {
-		spanComplex.classList.remove('active');
-		spanComplex.classList.add('no-active');
-	}
-	if (spanGeneral.classList.contains('active')) {
-		spanGeneral.classList.remove('active');
-		spanGeneral.classList.add('no-active');
-	}
-	if (spanAfterRepair.classList.contains('active')) {
-		spanAfterRepair.classList.remove('active');
-		spanAfterRepair.classList.add('no-active');
-	}
+supportive.addEventListener('click', function() {
+	supportiveDescription.classList.toggle('not-show');
 });
-typeOfCleaningComplex.addEventListener('click', function() {
-	//mobile
-	typeOfCleaningDescriptionComplex.classList.toggle('not-show');
-	/* typeOfCleaningDescriptionSupportive.classList.add("not-show");
-	typeOfCleaningDescriptionGeneral.classList.add("not-show");
-	typeOfCleaningDescriptionAfterRepair.classList.add("not-show") */
-
-	//desctop
-	typeOfCleaningDesctopComplex.classList.remove('not-show');
-	typeOfCleaningDesctopSupportive.classList.add('not-show');
-	typeOfCleaningDesctopGeneral.classList.add('not-show');
-	typeOfCleaningDesctopAfterRepair.classList.add('not-show');
-
-	//active
-	spanComplex.classList.add('active');
-	spanComplex.classList.remove('no-active');
-	if (spanSupportive.classList.contains('active')) {
-		spanSupportive.classList.remove('active');
-		spanSupportive.classList.add('no-active');
-	}
-	if (spanGeneral.classList.contains('active')) {
-		spanGeneral.classList.remove('active');
-		spanGeneral.classList.add('no-active');
-	}
-	if (spanAfterRepair.classList.contains('active')) {
-		spanAfterRepair.classList.remove('active');
-		spanAfterRepair.classList.add('no-active');
-	}
+general.addEventListener('click', function() {
+	generalDescription.classList.toggle('not-show');
 });
-typeOfCleaningGeneral.addEventListener('click', function() {
-	typeOfCleaningDescriptionGeneral.classList.toggle('not-show');
-	/* 	typeOfCleaningDescriptionSupportive.classList.add("not-show");
-	typeOfCleaningDescriptionComplex.classList.add("not-show");
-	typeOfCleaningDescriptionAfterRepair.classList.add("not-show") */
-
-	//desctop
-	typeOfCleaningDesctopGeneral.classList.remove('not-show');
-	typeOfCleaningDesctopSupportive.classList.add('not-show');
-	typeOfCleaningDesctopComplex.classList.add('not-show');
-	typeOfCleaningDesctopAfterRepair.classList.add('not-show');
-
-	//active
-	spanGeneral.classList.add('active');
-	spanGeneral.classList.remove('no-active');
-	if (spanSupportive.classList.contains('active')) {
-		spanSupportive.classList.remove('active');
-		spanSupportive.classList.add('no-active');
-	}
-	if (spanComplex.classList.contains('active')) {
-		spanComplex.classList.remove('active');
-		spanComplex.classList.add('no-active');
-	}
-	if (spanAfterRepair.classList.contains('active')) {
-		spanAfterRepair.classList.remove('active');
-		spanAfterRepair.classList.add('no-active');
-	}
+afterRepair.addEventListener('click', function() {
+	afterRepairDescription.classList.toggle('not-show');
 });
-typeOfCleaningAfterRepair.addEventListener('click', function() {
-	typeOfCleaningDescriptionAfterRepair.classList.toggle('not-show');
-	/* 	typeOfCleaningDescriptionSupportive.classList.add("not-show");
-	typeOfCleaningDescriptionComplex.classList.add("not-show");
-	typeOfCleaningDescriptionGeneral.classList.add("not-show") */
-
-	//desctop
-	typeOfCleaningDesctopAfterRepair.classList.remove('not-show');
-	typeOfCleaningDesctopSupportive.classList.add('not-show');
-	typeOfCleaningDesctopComplex.classList.add('not-show');
-	typeOfCleaningDesctopGeneral.classList.add('not-show');
-
-	//active
-	spanAfterRepair.classList.add('active');
-	spanAfterRepair.classList.remove('no-active');
-	if (spanSupportive.classList.contains('active')) {
-		spanSupportive.classList.remove('active');
-		spanSupportive.classList.add('no-active');
-	}
-	if (spanGeneral.classList.contains('active')) {
-		spanGeneral.classList.remove('active');
-		spanGeneral.classList.add('no-active');
-	}
-	if (spanComplex.classList.contains('active')) {
-		spanComplex.classList.remove('active');
-		spanComplex.classList.add('no-active');
-	}
+dop.addEventListener('click', function() {
+	dopDescription.classList.toggle('not-show');
 });
 
-//прайс - подробнее
+//гажимаем на кнопку подробнее и открывается модалка со списком работ, вхолящих в уборку
+var header = document.querySelector('.header');
+var services = document.querySelector(".services")
+var advantages = document.querySelector('.advantages');
+var faq = document.querySelector('.faq');
+var footer = document.querySelector('.footer');
+var button = document.querySelector('.toc__item-button');
+var buttonSupportive = document.querySelector('.toc__item-button--supportive');
+var modalSupportive = document.querySelector('.toc-modal--supportive');
+var buttonGeneral = document.querySelector('.toc__item-button--general');
+var modalGeneral = document.querySelector('.toc-modal--general');
+var buttonAfterRepair = document.querySelector('.toc__item-button--after-repair');
+var modalAfterRepair = document.querySelector('.toc-modal--after-repair');
+var buttonDop = document.querySelector('.toc__item-button--dop');
+var modalDop = document.querySelector('.toc-modal--dop');
+
+buttonSupportive.addEventListener('click', function() {
+	modalSupportive.classList.remove('not-show');
+});
+buttonGeneral.addEventListener('click', function() {
+	modalGeneral.classList.remove('not-show');
+});
+buttonAfterRepair.addEventListener('click', function() {
+	modalAfterRepair.classList.remove('not-show');
+});
+buttonDop.addEventListener('click', function() {
+	modalDop.classList.remove('not-show');
+});
+
+//закрываем модалку видов уборки
+var buttonModal = document.querySelector(".toc-modal__close");
+var buttonCloseSupportive = document.querySelector(".button__close--supportive")
+var buttonCloseGeneral = document.querySelector(".button__close--general")
+var buttonCloseAfterRepair = document.querySelector(".button__close--after-repair")
+var buttonCloseDop = document.querySelector(".button__close--dop")
+
+buttonCloseSupportive.addEventListener("click", function(){
+	modalSupportive.classList.add("not-show")
+})
+buttonCloseGeneral.addEventListener("click", function(){
+	modalGeneral.classList.add("not-show")
+})
+buttonCloseAfterRepair.addEventListener("click", function(){
+	modalAfterRepair.classList.add("not-show")
+})
+buttonCloseDop.addEventListener("click", function(){
+	modalDop.classList.add("not-show")
+});
+
+//desctop: при нажатии на уборку появляется белое подчеркивание
+var desctopSupportive = document.querySelector(".toc__desctop-item--supportive")
+var desctopGeneral = document.querySelector(".toc__desctop-item--general")
+var desctopAfterRepair = document.querySelector(".toc__desctop-item--after-repair")
+var desctopDop = document.querySelector(".toc__desctop-item--dop")
+
+var desctopSupportiveWorks = document.querySelector(".toc__desctop-box--supportive") 
+var desctopGeneralWorks = document.querySelector(".toc__desctop-box--general") 
+var desctopAfterRepairWorks = document.querySelector(".toc__desctop-box--after-repair") 
+var desctopDopWorks = document.querySelector(".toc__desctop-box--dop") 
+
+desctopSupportive.addEventListener("click", function(){
+	if(!(desctopSupportive.classList.contains("active"))){
+		desctopSupportive.classList.add("active")
+		if (desctopGeneral.classList.contains("active"))
+			desctopGeneral.classList.remove("active")
+		if (desctopAfterRepair.classList.contains("active"))
+			desctopAfterRepair.classList.remove("active")
+		if (desctopDop.classList.contains("active"))
+			desctopDop.classList.remove("active");
+
+		if(desctopSupportiveWorks.classList.contains("not-show"))
+			desctopSupportiveWorks.classList.remove("not-show")
+		if(!desctopGeneralWorks.classList.contains("not-show"))
+			desctopGeneralWorks.classList.add("not-show")
+		if(!desctopAfterRepairWorks.classList.contains("not-show"))
+		desctopAfterRepairWorks.classList.add("not-show")
+		if(!desctopDopWorks.classList.contains("not-show"))
+		desctopDopWorks.classList.add("not-show")
+
+	} 
+})
+desctopGeneral.addEventListener("click", function(){
+	if(!desctopGeneral.classList.contains("active")){
+		desctopGeneral.classList.add("active")
+		if (desctopSupportive.classList.contains("active"))
+			desctopSupportive.classList.remove("active")
+		if (desctopAfterRepair.classList.contains("active"))
+			desctopAfterRepair.classList.remove("active")
+		if (desctopDop.classList.contains("active"))
+			desctopDop.classList.remove("active");
+
+		if(desctopGeneralWorks.classList.contains("not-show"))
+			desctopGeneralWorks.classList.remove("not-show")
+		if(!desctopSupportiveWorks.classList.contains("not-show"))
+			desctopSupportiveWorks.classList.add("not-show")
+		if(!desctopAfterRepairWorks.classList.contains("not-show"))
+			desctopAfterRepairWorks.classList.add("not-show")
+		if(!desctopDopWorks.classList.contains("not-show"))
+			desctopDopWorks.classList.add("not-show")
+	
+	}
+})
+
+desctopAfterRepair.addEventListener("click", function(){
+	if(!desctopAfterRepair.classList.contains("active")){
+		desctopAfterRepair.classList.add("active")
+		if (desctopSupportive.classList.contains("active"))
+			desctopSupportive.classList.remove("active")
+		if (desctopGeneral.classList.contains("active"))
+		desctopGeneral.classList.remove("active")
+		if (desctopDop.classList.contains("active"))
+			desctopDop.classList.remove("active");
+
+		if(desctopAfterRepairWorks.classList.contains("not-show"))
+		desctopAfterRepairWorks.classList.remove("not-show")
+		if(!desctopSupportiveWorks.classList.contains("not-show"))
+			desctopSupportiveWorks.classList.add("not-show")
+		if(!desctopGeneralWorks.classList.contains("not-show"))
+			desctopGeneralWorks.classList.add("not-show")
+		if(!desctopDopWorks.classList.contains("not-show"))
+			desctopDopWorks.classList.add("not-show")
+	
+	}
+})
+	desctopDop.addEventListener("click", function(){
+	if(!desctopDop.classList.contains("active")){
+			desctopDop.classList.add("active")
+			if (desctopSupportive.classList.contains("active"))
+				desctopSupportive.classList.remove("active")
+			if (desctopGeneral.classList.contains("active"))
+			desctopGeneral.classList.remove("active")
+			if (desctopAfterRepair.classList.contains("active"))
+			desctopAfterRepair.classList.remove("active");
+	
+			if(desctopDopWorks.classList.contains("not-show"))
+			desctopDopWorks.classList.remove("not-show")
+			if(!desctopSupportiveWorks.classList.contains("not-show"))
+				desctopSupportiveWorks.classList.add("not-show")
+			if(!desctopGeneralWorks.classList.contains("not-show"))
+				desctopGeneralWorks.classList.add("not-show")
+			if(!desctopAfterRepairWorks.classList.contains("not-show"))
+			desctopAfterRepairWorks.classList.add("not-show")
+		
+	}	
+})
+
+//прайс -() подробнее
 var priceCleaningSupportive = document.querySelector('.price__item--supportive');
 var priceSupportive = document.querySelector('.price__type-of-space--supportive');
-
-var priceCleaningComplex = document.querySelector('.price__item--complex');
-var priceComplex = document.querySelector('.price__type-of-space--complex');
 
 var priceCleaningGeneral = document.querySelector('.price__item--general');
 var priceGeneral = document.querySelector('.price__type-of-space--general');
@@ -271,9 +296,7 @@ var priceAfterRepair = document.querySelector('.price__type-of-space--after-repa
 priceCleaningSupportive.addEventListener('click', function() {
 	priceSupportive.classList.toggle('not-show');
 });
-priceCleaningComplex.addEventListener('click', function() {
-	priceComplex.classList.toggle('not-show');
-});
+
 priceCleaningGeneral.addEventListener('click', function() {
 	priceGeneral.classList.toggle('not-show');
 });

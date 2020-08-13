@@ -40,16 +40,15 @@
 }
 
 .price__inner {
-	margin: 0;
-	padding: 0;
-
 	display: flex;
 	justify-content: space-around;
-	align-items: start;
+
+	margin: 0;
+	padding: 0;
 }
 
 .price__list {
-	margin: 0 auto;
+	margin: 0 ;
 	padding: 0;
 
 	list-style: none;
@@ -131,10 +130,6 @@
 	}
 
 	.price__inner {
-		display: flex;
-		justify-content: space-around;
-
-		padding: 0 20px;
 	}
 
 	.price__list {
@@ -202,15 +197,15 @@
 	}
 
 	.price__inner {
-		padding: 0 40px;
+		padding: 0 ;
 	}
 
 	.price__list {
-		margin-right: 40px;
+		margin-right: 0;
 	}
 
 	.price__item {
-		font-size: 18px;
+		font-size: 20px;
 		&-span {
 			cursor: pointer;
 		}

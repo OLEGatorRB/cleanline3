@@ -8,13 +8,15 @@ $retina-dppx: 1.5dppx;
 	padding-bottom: 20px;
 
 	background-color: #fff;
-	background-image: url("../img/faq/faq.jpg");
+	/* background-image: url("../img/faq/faq.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 50%;
+	background-position: 50%; */
 	color: #000;
+	opacity: 0.8;
 
 	font-size: 18px;
+	font-weight: bold;
 
 	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
 		background-image: url("../img/faq/faq@2x.jpg");
