@@ -62,7 +62,7 @@
 
 .toc__list {
 	margin: 0 AUTO;
-	padding: 20px 0;
+	padding: 0 0;
 	padding-bottom: 0;
 	
 	width: 100%;
@@ -97,7 +97,6 @@
 
 		width: 44%;
 
-		font-size: 20px;
 
 		border-bottom: 0;
 		&:nth-child(1),
@@ -110,11 +109,17 @@
 	}
 }
 
+.toc__item-title{}
+@media only screen and (min-width: 768px) {
+	.toc__item-title{
+		font-size: 18px;
+	}
+}
+
 .toc__content {
 	margin: 0;
 	padding: 0;
 }
-
 @media only screen and (min-width: 768px) {
 	.toc__content {
 		.not-show{
@@ -137,8 +142,6 @@
 	padding: 0;
 }
 
-
-
 .toc__item-text {
 	margin: 0;
 	margin-bottom: 10px;
@@ -146,6 +149,13 @@
 	padding-top: 10px;
 
 	text-transform: none;
+
+	font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+	.toc__item-text {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -165,6 +175,12 @@
 	background-color: #fff;
 	color: #000;
 }
+@media only screen and (min-width: 768px) {
+	.toc__item-button{
+		font-size: 16px;
+	}
+}
+
 
 .toc-modal {
 	position: absolute;
@@ -209,13 +225,15 @@
 	text-transform: uppercase;
 	text-decoration: underline;
 
-	font-size: 12px;
+	font-size: 16px;
 }
+
 @media only screen and (min-width: 768px) {
 	.low-wrapper{
 		display: flex;
 	}
 }
+
 .low {
 	margin: 0;
 	margin-bottom: 20px;
@@ -234,7 +252,11 @@
 
 	text-transform: uppercase;
 
-	font-size: 12px;
+	font-size: 14px;
+}
+
+.detailed__item {
+	font-size: 14px;
 }
 
 .toc-modal__close {
@@ -253,11 +275,11 @@
 	&::after{
 		content: "";
 		position: absolute;
-		top: 20px;
+		top: 35px;
 		left: 0;
 
-		width: 40px;
-		height: 2px;
+		width: 35px;
+		height: 3px;
 
 		display: block;
 

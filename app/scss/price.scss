@@ -48,12 +48,13 @@
 }
 
 .price__list {
+	margin: 0;
+	padding: 0;
 
 	list-style: none;
 
 	font-size: 16px;
 
-	text-align: left;
 	text-transform: uppercase;
 
 	background-color: rgba(255, 255, 255, 0.6);
@@ -72,8 +73,11 @@
 	padding-bottom: 5px;
 
 	text-align: center;
-
 	border-bottom: 1px solid #000;
+
+	&-span {
+		font-size: 16px;
+	}
 }
 
 .price__item:last-child {
@@ -82,21 +86,23 @@
 
 .price__type-of-space {
 	margin: 0;
-	margin-left: 20px;
+	margin-left: 0;
 	padding: 0;
 
 	list-style: none;
 
 	font-size: 14px;
 	text-transform: uppercase;
+
 }
 .price__type-of-space-item {
 	margin-top: 10px;
+	font-size: 14px;
 }
 
 .price__area-of-space {
 	margin: 0;
-	margin-left: 20px;
+	margin-left: 0;
 	padding: 0;
 
 	list-style: none;
@@ -106,7 +112,7 @@
 }
 .area-of-space__item {
 	margin-top: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: none;
 }
 
@@ -119,7 +125,6 @@
 			padding: 0;
 
 			padding-top: 1px;
-
 		}
 	}
 
@@ -129,16 +134,17 @@
 	}
 
 	.price__inner {
-		justify-content: space-around;
+		justify-content: space-between;
+
+		margin: 0 auto;
+		width: 90%;
 	}
 
 	.price__list {
 		padding: 0;
 
-		font-size: 16px;
 
 		text-transform: uppercase;
-
 	}
 
 	.price__item {
@@ -151,6 +157,8 @@
 
 			margin-left: 40px;
 
+			font-size: 18px;
+
 			&::before {
 				content: "";
 
@@ -159,7 +167,7 @@
 				height: 35px;
 
 				position: absolute;
-				top: -5px;
+				top: -2px;
 				left: -35px;
 
 				background-color: #fff;
@@ -169,16 +177,24 @@
 		}
 	}
 
+	.price__type-of-space{
+		margin-left: 60px;
+		font-size: 18px;
+	}
+
 	.price__type-of-space-item {
-		margin-left: 20px;
 	}
 
 	.price__photo {
+		align-self: start;
 		width: 270px;
 	}
 
 	.price__photo.not-show {
 		display: block;
+	}
+	.area-of-space__item{
+		margin-left: 20px;
 	}
 }
 
@@ -206,8 +222,9 @@
 	}
 
 	.price__item {
-		font-size: 21px;
 		&-span {
+			font-size: 20px;
+
 			cursor: pointer;
 		}
 	}
@@ -223,9 +240,7 @@
 		margin-left: 40px;
 		padding: 0;
 	}
-	.price__item-span {
-		font-size: 21px;
-	}
+
 
 	.price__type-of-space-item {
 		font-size: 21px;

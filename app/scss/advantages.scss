@@ -19,6 +19,7 @@
 
 .advantages__title {
 	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
 
 	font-size: 24px;
@@ -55,6 +56,8 @@
 	margin-bottom: 10px;
 
 	font-weight: normal;
+
+	font-size: 16px;
 
 	&::before {
 		content: "";
@@ -98,7 +101,7 @@
 	margin: 0;
 	margin-bottom: 25px;
 
-	font-size: 16px;
+	font-size: 14px;
 
 	text-transform: none;
 }
@@ -130,8 +133,13 @@
 		padding: 0;
 	}
 
+	.advantages__item-title {
+		font-size: 18px;
+	}
+
 	.advantages__item-description {
 		margin: 0;
+		font-size: 16px;
 	}
 }
 
