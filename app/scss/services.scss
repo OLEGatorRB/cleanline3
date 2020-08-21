@@ -309,13 +309,18 @@ body {
 			}
 			.services__modal-list {
 				flex-direction: row;
-				justify-content: center;
+				justify-content: space-around;
+				align-items: center;
 
 				padding: 0 30px;
 			}
 
 			.services__modal-item {
 				width: 44%;
+
+				font-size: 21px;
+
+				align-self: center;
 			}
 
 			.services__modal-button {
