@@ -30,6 +30,7 @@ buttonRoom.addEventListener('click', function() {
 	roomPopup.classList.remove('not-show');
 	modal.classList.remove('not-show');
 
+
 	servicesList.classList.add('not-show');
 	toggles.classList.add('not-show');
 });
@@ -155,15 +156,52 @@ var modalDop = document.querySelector('.toc-modal--dop');
 
 buttonSupportive.addEventListener('click', function() {
 	modalSupportive.classList.remove('not-show');
+	if(!modalGeneral.classList.contains("not-show")){
+		modalGeneral.classList.add("not-show")
+	}
+	if(!modalAfterRepair.classList.contains("not-show")){
+		modalAfterRepair.classList.add("not-show")
+	}
+	if(!modalDop.classList.contains("not-show")){
+		modalDop.classList.add("not-show")
+	}
+	
 });
 buttonGeneral.addEventListener('click', function() {
 	modalGeneral.classList.remove('not-show');
+	if(!modalSupportive.classList.contains("not-show")){
+		modalSupportive.classList.add("not-show")
+	}
+	if(!modalAfterRepair.classList.contains("not-show")){
+		modalAfterRepair.classList.add("not-show")
+	}
+	if(!modalDop.classList.contains("not-show")){
+		modalDop.classList.add("not-show")
+	}
 });
 buttonAfterRepair.addEventListener('click', function() {
 	modalAfterRepair.classList.remove('not-show');
+	if(!modalSupportive.classList.contains("not-show")){
+		modalSupportive.classList.add("not-show")
+	}
+	if(!modalGeneral.classList.contains("not-show")){
+		modalGeneral.classList.add("not-show")
+	}
+	if(!modalDop.classList.contains("not-show")){
+		modalDop.classList.add("not-show")
+	}
 });
 buttonDop.addEventListener('click', function() {
 	modalDop.classList.remove('not-show');
+	if(!modalSupportive.classList.contains("not-show")){
+		modalSupportive.classList.add("not-show")
+	}
+	if(!modalGeneral.classList.contains("not-show")){
+		modalGeneral.classList.add("not-show")
+	}
+	if(!buttonAfterRepair.classList.contains("not-show")){
+		buttonAfterRepair.classList.add("not-show")
+	}
 });
 
 //закрываем модалку видов уборки
