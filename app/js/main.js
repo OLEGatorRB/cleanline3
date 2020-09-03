@@ -240,8 +240,8 @@ buttonDop.addEventListener('click', function() {
 	if(!modalGeneral.classList.contains("not-show")){
 		modalGeneral.classList.add("not-show")
 	}
-	if(!buttonAfterRepair.classList.contains("not-show")){
-		buttonAfterRepair.classList.add("not-show")
+	if(!modalAfterRepair.classList.contains("not-show")){
+		modalAfterRepair.classList.add("not-show")
 	}
 });
 
