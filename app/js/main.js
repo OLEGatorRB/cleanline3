@@ -127,15 +127,56 @@ var dopDescription = document.querySelector('.toc__item-description--dop');
 
 supportive.addEventListener('click', function() {
 	supportiveDescription.classList.toggle('not-show');
+
+	if(!generalDescription.classList.contains("not-show")){
+		generalDescription.classList.add("not-show")
+	}
+	if(!afterRepairDescription.classList.contains("not-show")){
+		afterRepairDescription.classList.add("not-show")
+	}
+	if(!dopDescription.classList.contains("not-show")){
+		dopDescription.classList.add("not-show")
+	}
+
 });
 general.addEventListener('click', function() {
 	generalDescription.classList.toggle('not-show');
+
+	if(!supportiveDescription.classList.contains("not-show")){
+		supportiveDescription.classList.add("not-show")
+	}
+	if(!afterRepairDescription.classList.contains("not-show")){
+		afterRepairDescription.classList.add("not-show")
+	}
+	if(!dopDescription.classList.contains("not-show")){
+		dopDescription.classList.add("not-show")
+	}
 });
 afterRepair.addEventListener('click', function() {
 	afterRepairDescription.classList.toggle('not-show');
+
+	if(!supportiveDescription.classList.contains("not-show")){
+		supportiveDescription.classList.add("not-show")
+	}
+	if(!generalDescription.classList.contains("not-show")){
+		generalDescription.classList.add("not-show")
+	}
+	if(!dopDescription.classList.contains("not-show")){
+		dopDescription.classList.add("not-show")
+	}
 });
 dop.addEventListener('click', function() {
 	dopDescription.classList.toggle('not-show');
+
+	if(!supportiveDescription.classList.contains("not-show")){
+		supportiveDescription.classList.add("not-show")
+	}
+	if(!generalDescription.classList.contains("not-show")){
+		generalDescription.classList.add("not-show")
+	}
+	if(!afterRepairDescription.classList.contains("not-show")){
+		afterRepairDescription.classList.add("not-show")
+	}
 });
 
 //гажимаем на кнопку подробнее и открывается модалка со списком работ, вхолящих в уборку
