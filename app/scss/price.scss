@@ -44,7 +44,17 @@
 	justify-content: center;
 
 	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
+
+	border: 1px solid #000;
+}
+
+.price__limit {
+	margin: 0 auto;
+	padding: 0;
+
+	width: 60%;
 }
 
 .price__list {
@@ -140,6 +150,13 @@
 
 		margin: 0 auto;
 		width: 90%;
+
+		margin-bottom: 10px;
+
+	}
+
+	.price__limit {
+		width: 80%;
 	}
 
 	.price__list {
