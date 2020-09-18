@@ -363,28 +363,30 @@
 		display: flex;
 		flex-direction: column;
 
-		&--after-repair {
-			.desctop__low-box{
-				justify-content: center;
-			}
-		}
-
+		&--after-repair,
 		&--dop {
-			.desctop__detailed-list{
-				list-style: none;
-				text-align: center;
+			.desctop__low-box{
+				justify-content: space-around;
 
-				}
+
+			}
+		
+
+		}
 		}
 	}
 
 	.desctop__low-box {
 		display: flex;
+		justify-content: center;
 
 		margin: 0;
 		padding: 0;
 
-		
+
+		.desctop__low{
+			width: 45%;
+		}
 	}
 
 	.toc__desctop-text {
@@ -436,7 +438,7 @@
 	.active {
 		border-bottom: 1px solid #000;
 	}
-}
+
 
 
 
