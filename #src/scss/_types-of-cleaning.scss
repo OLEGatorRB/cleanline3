@@ -1,0 +1,181 @@
+.types {
+	color: #fcfcfc;
+	background-color: #171c1c;
+}
+
+.types--wrapper {
+	padding: 0 12px;
+}
+@media screen and (min-width: 1280px) {
+	.types--wrapper {
+		width: 60%;
+	}
+}
+
+.types--title {
+	margin-bottom: 16px;
+
+	color: #fcfcfc;
+
+	border-bottom: 3px solid #fff;
+}
+@media screen and (min-width: 1280px) {
+	.types--title {
+	}
+}
+
+.types--list {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	list-style: none;
+}
+@media screen and (min-width: 1280px) {
+	.types--list {
+	}
+}
+
+.types--item {
+	list-style: none;
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+
+	display: flex;
+	flex-direction: column;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.types--item {
+	}
+}
+@media screen and (min-width: 1280px) {
+	.types--item {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 24px;
+
+		text-align: left;
+	}
+}
+.type--title {
+	margin-right: auto;
+	margin-bottom: 4px;
+
+	&:last-child {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+	color: #162021;
+	background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+	.type--title {
+		margin-right: auto;
+		margin-bottom: 12px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.type--title {
+		margin-right: auto;
+		margin-bottom: 12px;
+		padding: 0;
+
+		font-size: 30px;
+	}
+}
+
+.type--block {
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.type--block {
+		margin: 0;
+		padding: 0;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		p {
+			margin-bottom: 12px;
+		}
+		.type--list {
+			margin: 0;
+			padding: 4px;
+			padding-left: 36px;
+			display: flex;
+			justify-content: start;
+
+			flex-wrap: wrap;
+
+			border: 2px solid #fff;
+
+			.type--work {
+				margin-right: 48px;
+				font-size: 16px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.type--description {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 27px;
+}
+@media screen and (min-width: 768px) {
+	.type--description {
+		line-height: 28px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.type--description {
+		line-height: 30px;
+	}
+}
+
+.type--extensive {
+	margin: 0;
+	padding: 0;
+
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.type--extensive {
+		display: block;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.type--extensive {
+		font-size: 16px;
+		line-height: 31px;
+
+		font-weight: normal;
+
+		text-transform: uppercase;
+
+		border: 1px solid red;
+	}
+}

@@ -1,0 +1,187 @@
+.footer {
+	margin: 0;
+	background-color: #162021;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+.footer--block {
+	margin: 0;
+	padding: 0;
+
+	.footer--item {
+		list-style: none;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.footer--block {
+		display: flex;
+		justify-content: center;
+
+		.footer--item {
+			.item {
+				margin: 0;
+				margin-right: auto;
+				padding: 0;
+
+				border: 1px solid #fff;
+			}
+		}
+
+		.footer--item__contacts {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+}
+@media screen and (min-width: 1280px) {
+	.footer--block {
+		justify-content: center;
+
+		.footer--item {
+			margin-right: 96px;
+		}
+	}
+}
+
+.contacts--logo {
+	margin: 0;
+	margin-bottom: 12px;
+	padding: 0;
+}
+
+.contacts--tel {
+	margin: 0;
+	margin-bottom: 12px;
+	padding: 0;
+}
+
+.contacts--social {
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+	a {
+		margin-right: 16px;
+	}
+}
+.part {
+	margin: 0;
+	margin-bottom: 12px;
+	padding: 0;
+
+	.part--list {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.part {
+		margin-bottom: 24px;
+	}
+}
+
+.footer--copy {
+	text-align: center;
+	font-size: 8px;
+	line-height: 14px;
+}
+/*
+.space--item {
+	margin-bottom: 4px;
+}
+
+.clean--list {
+	margin: 0;
+	margin-bottom: 32px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.clean--item {
+	margin-bottom: 4px;
+}
+
+.prices--list {
+	margin: 0;
+	margin-bottom: 32px;
+
+	padding: 0;
+
+	list-style: none;
+}
+
+.faqs--list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+@media screen and (min-width: 1280px) {
+	.contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+.social--link {
+	margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+	.social--link {
+		margin-right: 40px;
+
+		img {
+			width: 30px;
+		}
+	}
+}
+@media screen and (min-width: 1280px) {
+	.social--link {
+		margin-right: 80px;
+
+		img {
+			width: 45px;
+		}
+	}
+}
+
+.contacts,
+.info {
+	margin: 0;
+	padding: 0;
+
+	li {
+		border: 1px solid #fff;
+	}
+
+	border: 1px solid #fff;
+}
+
+.info li {
+}
+
+
+@media screen and (min-width: 768px) {
+	.footer--copy {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.footer--copy {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}*/

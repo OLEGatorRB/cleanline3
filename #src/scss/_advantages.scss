@@ -1,0 +1,150 @@
+.advantages {
+	background-color: #cfd6dc;
+	padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+	.advantages {
+		padding-bottom: 36px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.advantages {
+		padding-bottom: 96px;
+	}
+}
+.advantages--wrapper {
+	padding: 0 8px;
+}
+
+.advantages--content {
+	margin: 0;
+	padding: 0;
+
+	font-size: 13px;
+	line-height: 21px;
+}
+@media screen and (min-width: 768px) {
+	.advantages--content {
+		display: flex;
+
+		line-height: 22px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.advantages--content {
+		justify-content: space-between;
+
+		line-height: 23px;
+	}
+}
+
+.advantages--list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	.advantages--item {
+		margin: 0;
+		padding: 0;
+		padding-left: 48px;
+		position: relative;
+
+		width: 80%;
+
+		margin-bottom: 12px;
+
+		.advantage--title {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 36px;
+			height: 36px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: contain;
+		}
+		&__price::before {
+			background-image: url(../img/advantages/wallet-line.svg);
+		}
+		&__personal::before {
+			background-image: url(../img/advantages/group-line.svg);
+		}
+		&__safety::before {
+			background-image: url(../img/advantages/shield-check-line.svg);
+		}
+		&__ugendly::before {
+			background-image: url(../img/advantages/flashlight-fill.svg);
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.advantages--list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-right: 32px;
+
+		.advantages--item {
+			width: 30%;
+
+			&::before {
+				left: -0;
+
+				width: 36px;
+				height: 36px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1280px) {
+	.advantages--list {
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+
+		.advantages--item {
+			margin: 0;
+			padding-left: 64px;
+			width: 35%;
+
+			&::before {
+				top: 16px;
+				top: 0;
+				left: -0;
+				width: 50px;
+				height: 50px;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.advantages--foto {
+	display: block;
+	margin: 0 auto;
+
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.advantages--foto {
+		width: 250px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.advantages--foto {
+		width: 360px;
+	}
+}
+
+.advantage--description {
+	margin: 0;
+	padding: 0;
+}

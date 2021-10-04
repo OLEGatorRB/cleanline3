@@ -1,0 +1,105 @@
+.price {
+	text-transform: uppercase;
+}
+
+.price--wrapper {
+	padding: 0 8px;
+}
+
+.price--title {
+}
+
+.price--list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.price--item {
+}
+@media screen and (min-width: 768px) {
+	.price--item {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.type--block {
+	margin: 0;
+	padding: 0;
+}
+.price--table {
+	margin: 0;
+
+	padding: 0;
+
+	width: 100%;
+
+	font-size: 12px;
+	line-height: 12px;
+
+	border-collapse: collapse;
+	border: 2px solid #000;
+
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.price--table {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.price--table {
+		font-size: 21px;
+		line-height: 36px;
+	}
+}
+.price--table th {
+	font-size: 7px;
+	line-height: 9px;
+}
+@media screen and (min-width: 768px) {
+	.price--table th {
+		width: 25%;
+
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.price--table th {
+		width: 25%;
+
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+.price--table tr {
+	border-bottom: 2px solid #000;
+}
+@media screen and (min-width: 768px) {
+	.price--table td {
+	}
+}
+.price--table thead tr {
+	background-color: #162021;
+	color: #fff;
+}
+.price--table tbody tr:last-child {
+	border-bottom: none;
+}
+
+.price--table th,
+.price--table td {
+	padding: 4px 0;
+	border-right: 2px solid #000;
+}
+@media screen and (min-width: 768px) {
+	.price--table th,
+	.price--table td {
+		padding: 8px 0;
+	}
+}

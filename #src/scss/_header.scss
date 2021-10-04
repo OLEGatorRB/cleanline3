@@ -1,0 +1,335 @@
+body {
+	padding: 0;
+
+	margin: 0;
+	padding: 0;
+
+	font-size: 16px;
+	line-height: 26px;
+	font-family: "Montserrat";
+
+	color: #444;
+	background-color: #fff;
+
+	text-transform: none;
+}
+@media screen and (min-width: 764px) {
+	body {
+	}
+}
+@media screen and (min-width: 1280px) {
+	body {
+	}
+}
+section,
+footer,
+header,
+footer {
+	padding-top: 36px;
+	padding-bottom: 56px;
+}
+@media screen and (min-width: 764px) {
+	section,
+	footer,
+	header {
+	}
+}
+@media screen and (min-width: 1280px) {
+	section {
+		padding-top: 64px;
+		padding-bottom: 96px;
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+}
+@media screen and (min-width: 764px) {
+	.wrapper {
+		width: 704px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.wrapper {
+		width: 75%;
+	}
+}
+
+img {
+	height: auto;
+}
+
+.visible-hidden {
+	display: none;
+}
+
+.section-title {
+	margin: 0;
+	margin-right: auto;
+	margin-bottom: 16px;
+	padding: 0;
+
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Alumni Sans";
+	font-size: 28px;
+
+	text-transform: uppercase;
+	border-bottom: 3px solid #000;
+}
+@media screen and (min-width: 764px) {
+	.section-title {
+		margin-bottom: 24px;
+
+		font-size: 48px;
+		line-height: 51px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.section-title {
+		margin-bottom: 36px;
+
+		font-size: 48px;
+		line-height: 51px;
+	}
+}
+
+.item {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 16px;
+
+	&:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: 764px) {
+	.item {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.item {
+	}
+}
+
+.subsection-title {
+	margin: 0;
+	margin-bottom: 8px;
+	padding: 0;
+
+	text-transform: uppercase;
+	font-family: "Alumni Sans";
+	font-size: 20px;
+}
+@media screen and (min-width: 764px) {
+	.subsection-title {
+		margin-bottom: 16px;
+
+		font-size: 28px;
+		line-height: 28px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.subsection-title {
+		margin-bottom: 24px;
+
+		font-size: 32px;
+		line-height: 34px;
+	}
+}
+
+.header {
+	background-image: url(../img/header/room.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+	.header {
+	}
+}
+@media screen and (min-width: 1280px) {
+	.header {
+		height: 100vh;
+	}
+}
+
+.menu-wrapper {
+}
+@media screen and (min-width: 1280px) {
+	.menu-wrapper {
+	}
+}
+
+.menu-list {
+	padding: 16px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu--tel {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Alumni Sans";
+	font-size: 28px;
+}
+@media screen and (min-width: 768px) {
+	.menu--tel {
+		font-size: 36px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.menu--tel {
+		order: 2;
+
+		font-size: 30px;
+	}
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	display: none;
+}
+@media screen and (min-width: 1280px) {
+	.nav {
+		display: flex;
+		justify-content: start;
+
+		width: 80%;
+	}
+}
+.nav--link {
+	font-size: 18px;
+	line-height: 33px;
+
+	text-decoration: none;
+
+	color: #000;
+
+	font-family: "Alumni Sans";
+}
+@media screen and (min-width: 768px) {
+	.nav--link {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.nav--link {
+		margin-right: 48px;
+		font-size: 24px;
+		line-height: 33px;
+	}
+}
+.logo {
+	padding: 128px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+
+	width: 100%;
+
+	font-size: 12px;
+	line-height: 20px;
+	font-family: "Alumni Sans";
+
+	h1 {
+		margin: 0 auto;
+		padding: 12px 16px 20px 16px;
+
+		background-color: #fff;
+		opacity: 0.7;
+
+		border-radius: 10px;
+
+		color: #171c1c;
+	}
+
+	span {
+		margin: 0;
+		margin-bottom: -8px;
+		padding: 0;
+
+		display: block;
+		font-size: 48px;
+		line-height: 50px;
+
+		border-bottom: 2px solid #000;
+	}
+}
+@media screen and (min-width: 768px) {
+	.menu-wrapper .logo {
+		font-size: 24px;
+		line-height: 36px;
+
+		h1 {
+			width: 70%;
+			padding-left: 72px;
+			padding-right: 72px;
+			padding-top: 64px;
+			padding-bottom: 72px;
+
+			border: 1px solid #000;
+		}
+		span {
+			font-size: 96px;
+			line-height: 108px;
+		}
+	}
+}
+@media screen and (min-width: 1280px) {
+	.menu-wrapper .logo {
+		font-size: 34px;
+		line-height: 36px;
+		h1 {
+			width: 70%;
+			padding-left: 72px;
+			padding-right: 72px;
+			padding-top: 64px;
+			padding-bottom: 72px;
+
+			border: 1px solid #000;
+		}
+		span {
+			font-size: 130px;
+			line-height: 108px;
+		}
+	}
+}
+.logo-img {
+	display: block;
+
+	margin: 0 auto;
+
+	width: 80%;
+
+	border-radius: 50px;
+
+	border: 1px solid blue;
+}
+@media screen and (min-width: 768px) {
+	.logo-img {
+	}
+}
+@media screen and (min-width: 1280px) {
+	.logo-img {
+	}
+}
